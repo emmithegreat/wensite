@@ -67,18 +67,6 @@ strong, b {
     margin-right: 10px;
 }
 
-.home-image{
-    
-}
-
-/* Homepage Hero Images & Layout */
-.home-image img {
-    width: 100%;    
-    height: 50vh;       
-    object-fit: cover;  
-    display: block;
-}
-
 .homescreen-image {
     flex: 1;
     min-width: 300px;
@@ -91,15 +79,43 @@ strong, b {
     display: block;
 }
 
+.title-image-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title-image-container {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+}
+
 .image-title {
     position: absolute;
-    top: 20px;     
-    right: 30px;    
-    font-size: 5rem;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;   
     font-weight: bold;
     margin: 0;
-    padding-top: 100px;
-    color: #002f6c;
+    padding: 0;
+    color: #ffffff; /* Changed to white for better visibility over dark photo */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .title-image-container .hero-image {
+        height: 25vh;       
+    }
+
+    .image-title {
+        font-size: 1.8rem;   
+    }
 }
 
 /* General Layout Containers & Columns */
