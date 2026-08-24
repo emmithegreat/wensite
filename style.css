@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Global / Large Desktop Styles */
 body {
     background-color: #052F5F !important;
@@ -69,7 +73,7 @@ strong, b {
 
 .homescreen-image {
     flex: 1;
-    min-width: 300px;
+    width: 100%;
 }
 
 .homescreen-image img {
@@ -82,6 +86,7 @@ strong, b {
 .title-image-container {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .title-image-container .hero-image {
@@ -112,9 +117,7 @@ strong, b {
 .col {
     background-color: white;
     flex: 1 1 30%; 
-    min-width: 280px; 
-    margin: 20px;
-    margin-bottom: 40px;
+    margin: 20px 0;
     border-radius: 0px; 
 }
 
@@ -127,7 +130,7 @@ strong, b {
 .intro {
     color: white;
     width: 100%;
-    margin: 15px 20px;
+    margin: 15px 0;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -154,7 +157,7 @@ strong, b {
     background-color: white;
     color: rgb(43, 26, 26);
     flex: 1 1 100%; 
-    margin: 15px 20px;
+    margin: 15px 0;
     padding: 30px;
 }
 
@@ -198,7 +201,7 @@ strong, b {
     width: 100%;
     color: white;
     font-size: 3rem;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .niggles-box {
@@ -206,15 +209,16 @@ strong, b {
     color: black;
     font-size: 1.3rem;
     width: 100%;
-    margin-left: 15px;
+    margin: 15px 0;
     padding: 15px;
 }
 
 /* Media Rows */
 .media-row {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    width: 100%;
+    max-width: 1100px;
     margin: 20px auto;
+    padding: 0 15px;
     display: flex;
     gap: 30px;
     flex: 1 1 45%;
@@ -222,7 +226,7 @@ strong, b {
 
 .prevention-image {
     flex: 0 0 35%;
-    min-width: 250px;
+    width: 100%;
     margin: 0;
 }
 
@@ -314,12 +318,12 @@ strong, b {
 .injury-section {
     color: black;
     background-color: white;
-    width: 100vw;
+    width: 100%;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
     padding: 40px 20px;
     border-bottom: 100px solid #052F5F;
 }
@@ -336,7 +340,7 @@ strong, b {
     font-size: 2.1rem;
     font-weight: bold;
     margin: 0;
-    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .section-header .subtitle {
@@ -571,9 +575,17 @@ strong, b {
 
     .media-row {
         flex-direction: column;
+        align-items: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     .prevention-image {
+        width: 100%;
+    }
+
+    .homescreen-image {
+        min-width: 0 !important;
         width: 100%;
     }
 }
@@ -586,6 +598,7 @@ strong, b {
 
     .col {
         flex: 1 1 100%; 
+        min-width: 0 !important;         /* Allows column to shrink to screen size */
         margin: 10px 0;
     }
 
@@ -600,10 +613,6 @@ strong, b {
         display: block;
     }
 
-    .image-title {
-        font-size: 1.5rem;   
-    }
-
     .title-image-container .hero-image {
         height: 13vh;       
     }
@@ -614,6 +623,8 @@ strong, b {
 
     .media-row {
         flex-direction: column;
-        align-items: center; /* This centers both the video and image */
+        align-items: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
