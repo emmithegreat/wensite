@@ -497,6 +497,11 @@ strong, b {
 
 /* Tablet View */
 @media (max-width: 1200px) {
+
+    .title-image-container .hero-image {
+        height: 15vh;       
+    }
+
     .navbar {
         justify-content: center;
     }
@@ -600,11 +605,15 @@ strong, b {
     }
 
     .title-image-container .hero-image {
-        height: 17vh;       
+        height: 13vh;       
     }
 
     .image-title {
         font-size: 1.5rem;   
     }
-}
+
+    .media-row {
+        flex-direction: column;
+        align-items: center; /* This centers both the video and image */
+    }
 }
