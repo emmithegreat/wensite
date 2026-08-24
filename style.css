@@ -627,4 +627,20 @@ strong, b {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
+
+    .content-grid-media {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .video-container, 
+    .image-container {
+        width: 100% !important;
+    }
+
+    .image-container img {
+        width: 100% !important;
+        height: auto !important;
+    }
 }
