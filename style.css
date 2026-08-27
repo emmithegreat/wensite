@@ -64,7 +64,7 @@ strong, b {
     border-color: #ffffff;
 }
 
-.logo-image img {
+.logo img {
     width: 150px;    
     height: auto;
     margin-left: 10px;
@@ -246,6 +246,19 @@ strong, b {
     margin: 0;
 }
 
+.rowing-img {
+    width: auto;
+    height: 280px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.football-img {
+    width: auto;
+    height: 280px;
+    padding-top: 30px;
+}
+
 .advice-bullet ul {
     margin: 0;
     padding-left: 20px;
@@ -325,7 +338,7 @@ strong, b {
     margin-left: 0;
     margin-right: 0;
     padding: 40px 20px;
-    border-bottom: 100px solid #052F5F;
+    border-bottom: 40px solid #052F5F;
 }
 
 /* Section Header (Stacked Layout Fix) */
@@ -359,7 +372,7 @@ strong, b {
     background-color: white;
     color: black;
     padding: 20px;
-    border-bottom: 24px solid #052F5F;
+    border-bottom: 50px solid #052F5F;
 }
 
 .stretching-info h3 {
@@ -548,6 +561,7 @@ strong, b {
     .image-title {
         font-size: 3rem;   
     }
+
 }
 
 @media (max-width: 1024px) {
