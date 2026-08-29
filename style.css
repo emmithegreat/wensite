@@ -71,6 +71,7 @@ strong, b {
     margin-right: 10px;
 }
 
+/* home screen title/image */
 .homescreen-image {
     flex: 1;
     width: 100%;
@@ -107,6 +108,14 @@ strong, b {
     color: #002f6c;
 }
 
+.title {
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+/* General css */
 .container {
     width: 100%;
     max-width: 1100px; 
@@ -126,6 +135,7 @@ strong, b {
     padding: 40px 30px; 
     line-height: 1.5; 
 }
+
 
 .intro {
     color: white;
@@ -150,7 +160,7 @@ strong, b {
     color: white !important;
 }
 
-/* Equipment White Content Boxes */
+/* Equipment boxes for other prevention strategies */
 .mouth,
 .head,
 .shin {
@@ -197,12 +207,6 @@ strong, b {
     color: white;
 }
 
-.title {
-    width: 100%;
-    color: white;
-    font-size: 3rem;
-    margin: 20px 0;
-}
 
 .niggles-box {
     background-color: white;
