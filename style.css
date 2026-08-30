@@ -108,13 +108,6 @@ strong, b {
     color: #002f6c;
 }
 
-.title {
-    width: 100%;
-    color: white;
-    font-size: 3rem;
-    margin: 20px 0;
-}
-
 /* General css */
 .container {
     width: 100%;
@@ -142,7 +135,7 @@ strong, b {
     width: 100%;
     margin: 15px 0;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .intro h2 {
@@ -168,6 +161,7 @@ strong, b {
     color: rgb(43, 26, 26);
     flex: 1 1 100%; 
     margin: 15px 0;
+    padding-top: 0px;
     padding: 30px;
 }
 
@@ -207,6 +201,12 @@ strong, b {
     color: white;
 }
 
+.title {
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
 
 .niggles-box {
     background-color: white;
