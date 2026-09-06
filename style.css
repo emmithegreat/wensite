@@ -553,10 +553,6 @@ strong, b {
         white-space: normal !important; 
     }
 
-    .home-image img {
-        height: 500px; 
-    }
-
     .container {
         justify-content: space-around;
     }
@@ -587,6 +583,7 @@ strong, b {
     .image-title {
         font-size: 3rem;   
     }
+    
     
 
 }
@@ -625,11 +622,10 @@ strong, b {
         width: 100%;
     }
 
-    .homescreen-image {
-        min-width: 0 !important;
-        width: 200px;
-        align-items: center;
+    .homescreen-image img {
+        height: 20rem;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -648,12 +644,6 @@ strong, b {
         font-size: 0.85rem;
     }
 
-    .home-image img {
-        width: 100%;    
-        height: 17vh;       
-        object-fit: cover;  
-        display: block;
-    }
 
     .title-image-container .hero-image {
         height: 13vh;       
@@ -692,5 +682,11 @@ strong, b {
     
     .football-img {
         width: 0px
+    }
+
+    .homescreen-image img,
+    .homevideo-container {
+        width: 20rem;
+        align-items: center;
     }
 }
