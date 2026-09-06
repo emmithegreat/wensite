@@ -462,21 +462,18 @@ strong, b {
     line-height: 1.4;
 }
 
-/* Placeholder image */
-.placeholder-box {
-    border: 1px solid #777;
-    background-color: #fff;
-    width: 100%;
-    height: 220px;
-    position: relative;
+/* Hamburger menu */
+.navbar-toggler {
+    border: 2px solid #E37222;
+    padding: 8px;
 }
 
-.cross-placeholder {
-    width: 100%;
-    height: 100%;
-    background: 
-        linear-gradient(to top right, transparent calc(50% - 1px), #777, transparent calc(50% + 1px)),
-        linear-gradient(to bottom right, transparent calc(50% - 1px), #777, transparent calc(50% + 1px));
+.hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #E37222;
+    margin: 4px 0;
 }
 
 /* Bottom Physio Links Box */
