@@ -25,14 +25,9 @@ strong, b {
 
 /* Navbar */
 .navbar {
-   color: #002f6c !important; 
-   width: 100%; 
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   flex-wrap: wrap; 
-   background-color: #002f6c; 
-   padding: 10px;
+    width: 100%;
+    background-color: #002f6c !important;
+    padding: 10px;
 }
 
 .nav-link {
@@ -43,7 +38,7 @@ strong, b {
 }
 
 .nav-link:hover {
-    color: white !important; 
+    color: white !important;
 }
 
 .nav-link.active {
@@ -51,15 +46,14 @@ strong, b {
 }
 
 .nav-item {
-    color: #E37222; 
-    font-size: 1rem; 
-    text-decoration: none; 
+    color: #E37222;
+    font-size: 1rem;
+    text-decoration: none;
     font-weight: bold;
-    white-space: nowrap;
     border: 1.5px solid #E37222;
-    padding: 1px 2px; 
+    padding: 1px 2px;
     margin: 3px;
-    border-radius: 0px; 
+    border-radius: 0;
 }
 
 .nav-item:has(.active) {
