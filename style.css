@@ -581,6 +581,7 @@ strong, b {
 
     .football-img{
         height: 0px;
+
     }
 
 }
@@ -619,17 +620,13 @@ strong, b {
         width: 100%;
     }
 
-    .homescreen-image {
-        width: 80% !important;
-        max-width: 350px;
-        height: auto !important;
+    .homescreen-image img {
+        height: 10rem;
+        width: 100%;
     }
 
-    .homescreen-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+    
+
 }
 
 @media (max-width: 480px) {
@@ -640,13 +637,14 @@ strong, b {
 
     .col {
         flex: 1 1 100%; 
-        min-width: 0 !important;
+        min-width: 0 !important;         /* Allows column to shrink to screen size */
         margin: 10px 0;
     }
 
     p {
         font-size: 0.85rem;
     }
+
 
     .title-image-container .hero-image {
         height: 13vh;       
@@ -685,11 +683,13 @@ strong, b {
     }
     
     .football-img {
-        width: 0px;
-        height: 0px;
+        width: 0px
+        
     }
 
     .advice-bullet {
         height: auto;
     }
+
+    
 }
